@@ -1,0 +1,10 @@
+	
+header {
+	background-color: blue;
+	color: yellow;
+	font.size: 26;
+}
+
+h1,h2 {
+	padding:10px;
+}
