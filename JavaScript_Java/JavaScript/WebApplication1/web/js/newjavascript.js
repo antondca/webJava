@@ -1,19 +1,14 @@
-package Practica1;
+class Practica1 {
 
-import static java.lang.Math.random;
-import java.util.Random;
-
-public class Practica1 {
-
-    public static void main(String[] args) {
+    main() {
 
         System.out.println("Hola Mundo!");
 
-        int variableEntera = 10;
-        float varDecial = 10.2022222222f;
-        double varDoblePrecision = 30.9999999999999;
-        String varTexto = " Un texto ";
-        boolean varBuleano = true;
+        var variableEntera = 10;
+        var varDecial = 10.2022222222;
+        var varDoblePrecision = 30.9999999999999;
+        var varTexto = " Un texto ";
+        var varBuleano = true;
 
         System.out.println("Variable: " + variableEntera);
         System.out.println("Variable: " + varDecial);
@@ -23,7 +18,7 @@ public class Practica1 {
 
         System.out.println("----------------------- ");
 
-        int contador = 0;
+        var contador = 0;
 
         while (contador < 10) {
             contador++;
@@ -67,21 +62,17 @@ public class Practica1 {
         
     }
     
-    
-    
-    
-    static float calcularIVA(float precio,float iva){
+    calcularIVA(precio,iva){
         
-        float resultado = precio + iva / 100* precio;
+        var resultado = precio + iva / 100* precio;
         return resultado;
     }
 
-    
-   static int aleatorio(){
-        Random r = new Random();
-        return r.nextInt(10)+1; // Aleatorio del 1 al 10 el más uno es para que no salga el 0
+    aleatorio(){
+        return Math.random();
     }
-     
-     
-     
 }
+
+var miPrueba = new PruebasJava();
+miPrueba.main();
+
