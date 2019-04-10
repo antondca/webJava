@@ -4,11 +4,11 @@
 //jQuery("body").append("<h1> Titulo JQuery");
 //jQuery("body").html("<h1>Titulo jQuery</h1>");
 
-//document.getElementById("marco").innerHTML = "Otro desde JS";
-//$("#marco").html($("#marco").html() + "<br/> Otro texto desde jQuery");
+document.getElementById("marco").innerHTML = "Otro desde JS";
+$("#marco").html($("#marco").html() + "<br/> Otro texto desde jQuery");
 
-var arrayLIs = document.getElementsByClassName("unaClase");
-for (var i = 0; i < arrayLIs.length;i++) {
+var arraysLIs = document.getElementsByClassName("unaClase");
+for (var i = 0; i < arraysLIs.length;i++) {
     arraysLIs[i].innerHTML += " - " + i + " !!! ";
 }
 
